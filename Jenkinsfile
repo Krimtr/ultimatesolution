@@ -7,17 +7,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'C:\\"Program Files"\\dotnet\\dotnet.exe build'
+                bat "${env.dotnet} build --configuration Release"
             }
         }
         stage('Run') {
             steps {
-                bat 'C:\\"Program Files"\\dotnet\\dotnet.exe run'
+                bat "${env.dotnet} run"
             }
         }
         stage('Clean') {
             steps {
-                bat 'C:\\"Program Files"\\dotnet\\dotnet.exe clean'
+                bat "${env.dotnet} clean"
             }
         }
     }
