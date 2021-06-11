@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    enviroment
+    environment
     {
         dotnet = "C:\\Program Files\\dotnet\\dotnet.exe"
     }
