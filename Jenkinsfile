@@ -7,17 +7,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'dotnet build'
+                bat "dotnet build"
             }
         }
         stage('Run') {
             steps {
-                bat 'dotnet run'
+                bat "dotnet run"
             }
         }
         stage('Clean') {
             steps {
-                bat 'dotnet clean'
+                bat "dotnet clean"
             }
         }
     }
